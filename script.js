@@ -14,3 +14,23 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
+
+let messageContainer = document.getElementById("messageContainer");
+let btn99 = document.getElementById("btn99");
+let btn999 = document.getElementById("btn999");
+let btn299 = document.getElementById("btn299");
+
+btn99.addEventListener("click", function () {
+  messageContainer.textContent =
+    "Hey There I am Intrested In this - BASIC PLAN (₹99)";
+});
+
+btn299.addEventListener("click", function () {
+  messageContainer.textContent =
+    "Hey There I am Intrested In this - MOCK TEST (₹299)";
+});
+
+btn999.addEventListener("click", function () {
+  messageContainer.textContent =
+    "Hey There I am Intrested In this - ULTIMATE PLAN (₹999)";
+});

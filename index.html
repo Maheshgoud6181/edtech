@@ -121,37 +121,28 @@
           Meet Our Team
         </h2>
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="team-card">
               <img
-                src="images/download.jpeg"
+                src="images/SOUVIK.jpg"
                 class="img-fluid rounded-circle"
-                alt="John Doe"
+                alt="Souvik Deb"
               />
-              <h5 class="mt-3">John Doe</h5>
-              <p>Senior Counselor</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-card">
-              <img
-                src="images/download.jpeg"
-                class="img-fluid rounded-circle"
-                alt="Jane Smith"
-              />
-              <h5 class="mt-3">Jane Smith</h5>
+              <h5 class="mt-3">Souvik Deb</h5>
+              <p>Mentor</p>
               <p>Content Creator</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="team-card">
               <img
-                src="images/download.jpeg"
+                src="images/SACHIN1.jpg"
                 class="img-fluid rounded-circle"
-                alt="Mark Lee"
+                alt="Sachin Singh"
               />
-              <h5 class="mt-3">Mark Lee</h5>
-              <p>Strategy Advisor</p>
+              <h5 class="mt-3">Sachin Singh</h5>
+              <p>Mentor</p>
+              <p>Content Creator</p>
             </div>
           </div>
         </div>
@@ -195,44 +186,81 @@
           <div class="col-md-4">
             <div class="pricing-card">
               <h4>Basic Plan</h4>
-              <p class="price">₹999</p>
+              <p class="price">₹99</p>
               <ul>
-                <li>1 Hour Counseling</li>
+                <li>🔹 One-on-One Video Call (30 mins)</li>
+                <li>🔹 Personalized Roadmap & Strategy</li>
+                <li>🔹 Expert Guidance for Your Next Steps</li>
               </ul>
-              <a href="#contact" class="btn btn-primary">Choose Plan</a>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                id="btn99"
+                onclick="btn99()"
+                >Choose Plan</a
+              >
             </div>
           </div>
           <div class="col-md-4">
             <div class="pricing-card">
-              <h4>Pro Plan</h4>
-              <p class="price">₹2499</p>
+              <h4>🎯 Mock Test</h4>
+              <p class="price">₹299</p>
+
               <ul>
-                <li>3 Sessions</li>
-                <li>Custom Study Plan</li>
+                <li>✅ Full-Length Mock Test to Evaluate Your Skills</li>
+                <li>✅ Full Mock Test + Expert Feedback</li>
+                <li>✅ Personalized Study Plan</li>
               </ul>
-              <a href="#contact" class="btn btn-primary">Choose Plan</a>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                id="btn299"
+                onclick="btn299()"
+                >Comming Soon</a
+              >
             </div>
           </div>
           <div class="col-md-4">
             <div class="pricing-card">
               <h4>Ultimate Plan</h4>
-              <p class="price">₹4999</p>
+              <p class="price">₹999</p>
               <ul>
-                <li>5 Sessions</li>
-                <li>Full-Time Guidance</li>
+                <li>💡 1-on-1 Personalized Guidance</li>
+                <li>📅 Career & Study Roadmap</li>
+                <li>🎯 Expert-Led Guidance for Long-Term Success</li>
               </ul>
-              <a href="#contact" class="btn btn-primary">Choose Plan</a>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                id="btn999"
+                onclick="btn999()"
+                >Pre-Booking</a
+              >
             </div>
           </div>
         </div>
+        <h2 class="text-center section-title mt-5 mb-3 main-heading">
+          Book Now & Get Ahead! 🚀
+        </h2>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 text-center">
+    <!-- <section id="contact" class="py-5 text-center">
       <div class="container mb-3 mt-3">
         <h2 class="text-center section-title mb-5">Contact Us</h2>
-        <form action="#" class="row g-3">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="row g-3"
+        >
+          
+          <input
+            type="hidden"
+            name="access_key"
+            value="b71496b7-eea1-433a-b1ab-1b5d5160cc4c"
+          />
+
           <div class="col-md-6">
             <input
               type="text"
@@ -251,6 +279,7 @@
           </div>
           <div class="col-12">
             <textarea
+              id="messageContainer"
               class="form-control"
               rows="5"
               placeholder="Your Message"
@@ -259,6 +288,58 @@
           </div>
           <div class="col-12 text-center">
             <button class="btn btn-primary btn-lg">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+
+    <section id="contact" class="py-5 text-center">
+      <div class="container mb-3 mt-3">
+        <h2 class="text-center section-title mb-5">Contact Us</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="row g-3"
+        >
+          <!-- Web3Forms Access Key (REQUIRED) -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="6c228f07-6f27-4168-9d56-e710df3ebfb0"
+          />
+
+          <div class="col-md-6">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="phone"
+              name="email"
+              class="form-control"
+              placeholder="Your Phone Number"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <textarea
+              id="messageContainer"
+              name="message"
+              class="form-control"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Send Message
+            </button>
           </div>
         </form>
       </div>
